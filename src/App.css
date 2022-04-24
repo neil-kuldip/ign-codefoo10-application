@@ -1,5 +1,10 @@
 .App {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'ars-maquette-web',sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 .App-logo {
@@ -35,4 +40,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px; 
+  overflow: hidden; 
+  width: 75%;
+  max-height: 100%;
 }

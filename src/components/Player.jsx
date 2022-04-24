@@ -15,8 +15,8 @@ const Player = () => {
                     <div></div>
                     <span aria-label="title">00:00</span>
                 </div>
-                <button class="rwd" data-icon="B" aria-label="rewind"/>
-                <button class="fwd" data-icon="F" aria-label="fast forward"/>
+                <button className="rwd" data-icon="B" aria-label="rewind"/>
+                <button className="fwd" data-icon="F" aria-label="fast forward"/>
                 Hi
             </div>
         </>

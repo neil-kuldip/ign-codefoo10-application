@@ -31,7 +31,7 @@ const App = () => {
     });
   };
 
-  // Retrieves current video array element for player and queue content
+  //  Retrieves current video array element for player and queue content
   const getCurrentVid = () => {
     if (vidData.length > 0) {
       let index = currVidIndex % vidCount;
@@ -50,7 +50,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <PlayerComponent vidUrl={currVidUrl} vidThumbnail={currVidThumbnail} setNextVid={setNextVid} setPrevVid={setPrevVid}/>
+      {currVidUrl.length > 0 && 
+        <PlayerComponent 
+          vidUrl={currVidUrl} 
+          vidThumbnail={currVidThumbnail} 
+          setNextVid={setNextVid} 
+          setPrevVid={setPrevVid}
+        />}
     </div>
   );
 };

@@ -50,3 +50,43 @@
   width: 50%;
   max-height: 100%;
 }
+
+.controls {
+  visibility: hidden;
+  opacity: 0.5;
+  width: 50%;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  margin-left: -200px;
+  background-color: "#000";
+  box-shadow: 3px 3px 5px "#000";
+  transition: 1s all;
+  display: flex;
+}
+
+.player:hover .controls, .player:focus .controls {
+  opacity: 1;
+}
+
+@font-face {
+  font-family: 'HeydingsControlsRegular';
+  src: url('assets/fonts/heydings_controls-webfont.eot');
+  src: url('assets/fonts/heydings_controls-webfont.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/heydings_controls-webfont.woff') format('woff'),
+       url('assets/fonts/heydings_controls-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+button:before {
+  font-family: HeydingsControlsRegular;
+  font-size: 20px;
+  position: relative;
+  content: attr(data-icon);
+  color: "#fff";
+  text-shadow: 1px 1px 0px "#fff";
+}
+
+

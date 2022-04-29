@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PlayerComponent from "./components/Player/Player";
 import "./App.css";
 import jsonp from "jsonp";
+import ReactPlayer from "react-player";
 
 const App = () => {
   const [vidData, setVidData] = useState([]);
@@ -10,6 +11,7 @@ const App = () => {
   const [currVidIndex, setCurrVidIndex] = useState(0);
   const [currVidUrl, setCurrVidUrl] = useState("");
   const [currVidThumbnail, setCurrVidThumbnail] = useState("");
+  const [currVidId, setCurrVidId] = useState("");
 
   useEffect(() => {
     getVidData();
@@ -25,8 +27,8 @@ const App = () => {
         if (vidData.length !== response.data.length) {
           setVidData(response.data);
           setVidCount(response.count);
+          console.log(response);
         }
-        console.log(response);
       }
     });
   };
@@ -37,15 +39,18 @@ const App = () => {
       let index = currVidIndex % vidCount;
       setCurrVidUrl(vidData[index].assets.at(-1).url);
       setCurrVidThumbnail(vidData[index].thumbnails.at(-1).url);
+      setCurrVidId(vidData[index].contentId);
     }
   };
 
   const setNextVid = () => {
     setCurrVidIndex(currVidIndex + 1);
+    getCurrentVid();
   };
 
   const setPrevVid = () => {
     setCurrVidIndex(currVidIndex - 1);
+    getCurrentVid();
   };
 
   return (
@@ -54,6 +59,7 @@ const App = () => {
         <PlayerComponent 
           vidUrl={currVidUrl} 
           vidThumbnail={currVidThumbnail} 
+          vidId={currVidId}
           setNextVid={setNextVid} 
           setPrevVid={setPrevVid}
         />}

@@ -20,6 +20,7 @@ code {
 img {
   height: 34%;
   width: 34%;
+  position: relative;
 }
 
 .link {
@@ -28,4 +29,13 @@ img {
 
 .link:hover {
   opacity: 0.8;
+}
+
+.link_duration {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding-left: 2px;
+  padding-right: 2px;
+  
 }

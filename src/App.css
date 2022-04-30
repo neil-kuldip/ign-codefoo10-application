@@ -1,10 +1,9 @@
 .App {
   margin-top: 5vh;
   display: flex;
-  text-align: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  font-family: 'ars-maquette-web',sans-serif;
+  font-family: "ars-maquette-web", sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -26,8 +25,8 @@
 .player {
   display: flex;
   flex-direction: column;
-  border-radius: 10px; 
-  overflow: hidden; 
+  border-radius: 10px;
+  overflow: hidden;
   width: 50%;
   max-height: 100%;
 }
@@ -47,16 +46,18 @@
   display: flex;
 }
 
-.player:hover .controls, .player:focus .controls {
+.player:hover .controls,
+.player:focus .controls {
   opacity: 1;
 }
 
 @font-face {
-  font-family: 'HeydingsControlsRegular';
-  src: url('assets/fonts/heydings_controls-webfont.eot');
-  src: url('assets/fonts/heydings_controls-webfont.eot?#iefix') format('embedded-opentype'),
-       url('assets/fonts/heydings_controls-webfont.woff') format('woff'),
-       url('assets/fonts/heydings_controls-webfont.ttf') format('truetype');
+  font-family: "HeydingsControlsRegular";
+  src: url("assets/fonts/heydings_controls-webfont.eot");
+  src: url("assets/fonts/heydings_controls-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/heydings_controls-webfont.woff") format("woff"),
+    url("assets/fonts/heydings_controls-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -69,5 +70,3 @@ button:before {
   color: "#fff";
   text-shadow: 1px 1px 0px "#fff";
 }
-
-

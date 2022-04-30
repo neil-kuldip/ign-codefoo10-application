@@ -12,7 +12,30 @@ code {
     monospace;
 }
 
-.react-player {
+/* .react-player {
   border-radius: 10px;
   overflow: hidden;
+} */
+
+img {
+  height: 34%;
+  width: 34%;
+  position: relative;
+}
+
+.link {
+  border-radius: 5%;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link_duration {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding-left: 2px;
+  padding-right: 2px;
+  
 }

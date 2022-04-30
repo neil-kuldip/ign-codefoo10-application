@@ -15,11 +15,12 @@ const PlayerComponent = ({
   return (
     <Container
       sx={{
-        width: "50%",
-        height: "100%",
+        width: "67%",
+        height: "50%",
         display: "flex",
         flexDirection: "column",
-        ml: "8vw",
+        flexWrap: "wrap",
+        ml: "0.5vw",
       }}
     >
       <ReactPlayer

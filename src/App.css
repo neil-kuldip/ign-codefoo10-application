@@ -22,7 +22,7 @@
   color: #61dafb;
 }
 
-.player {
+/* .player {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -69,4 +69,4 @@ button:before {
   content: attr(data-icon);
   color: "#fff";
   text-shadow: 1px 1px 0px "#fff";
-}
+} */

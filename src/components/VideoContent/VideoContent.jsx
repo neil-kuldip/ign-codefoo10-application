@@ -26,7 +26,7 @@ const VideoContentComponent = ({ vidDetails }) => {
       <Typography variant="h4" fontWeight="bold" sx={{ mr: "5vw" }}>
         {vidDetails.title}
       </Typography>
-      <Typography variant="h7" sx={{ mt: "1vh", mr: "3vw" }}>
+      <Typography variant="h7" sx={{ mt: "1vh", mr: "3vw", mb: "3vh" }}>
         {vidDetails.description}
       </Typography>
     </Box>

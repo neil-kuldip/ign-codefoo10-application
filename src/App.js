@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PlayerComponent from "./components/Player/Player";
+import PlaylistComponent from "./components/Playlist/Playlist";
 import "./App.css";
 import jsonp from "jsonp";
 
@@ -54,9 +55,22 @@ const App = () => {
     getCurrentVid();
   };
 
+  const selectNextVid = (event) => {
+    let index = -1;
+    let counter = 0;
+    vidData.forEach((vid) => {
+      if (vid.contentId === event.contentId) {
+        index = counter;
+      }
+      counter++;
+    })
+    setCurrVidIndex(index);
+    getCurrentVid();
+  };
+
   return (
     <div className="App">
-      {currVidUrl.length > 0 && (
+      {currVidUrl.length > 0 ? (
         <PlayerComponent
           vidUrl={currVidUrl}
           vidThumbnail={currVidThumbnail}
@@ -64,8 +78,19 @@ const App = () => {
           setNextVid={setNextVid}
           setPrevVid={setPrevVid}
           vidDetails={currVidDetails}
+        /> 
+      ) : 
+      <>Application Could Not Connect to IGN API</>}
+      {currVidUrl.length > 0 ? (
+        <PlaylistComponent 
+          currVidId={currVidId}
+          currVidDetails={currVidDetails}
+          vidData={vidData}  
+          selectNextVid={selectNextVid}  
         />
-      )}
+      ) 
+      : <></> } 
+      
     </div>
   );
 };

@@ -22,6 +22,6 @@ At first was thinking that Voltorb would not be an ideal choice of Pokemon to po
     ***Total # of Voltorbs = E kWh/yr / Vby Wh/yr = E / Vby***
     
 Special Considerations for Professor Laventon
-- There will also need to be a separate facility for the voltorbs since they let out large laugh when they discharge, leading to noise pollution. 
+- There will also need to be a separate facility for the Voltorbs since they let out large laugh when they discharge, leading to noise pollution. 
 - From my IGN sources, a Hisuian Voltorb can evolve with leaf stones and such Electrodes can produce more energy. Thus less Voltorbs would possibly be required.
 

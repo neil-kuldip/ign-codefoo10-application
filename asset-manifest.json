@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ign-codefoo10-application/static/css/main.bf8605a7.css",
+    "main.js": "/ign-codefoo10-application/static/js/main.6e220b7c.js",
+    "static/js/787.af4f956b.chunk.js": "/ign-codefoo10-application/static/js/787.af4f956b.chunk.js",
+    "index.html": "/ign-codefoo10-application/index.html",
+    "main.bf8605a7.css.map": "/ign-codefoo10-application/static/css/main.bf8605a7.css.map",
+    "main.6e220b7c.js.map": "/ign-codefoo10-application/static/js/main.6e220b7c.js.map",
+    "787.af4f956b.chunk.js.map": "/ign-codefoo10-application/static/js/787.af4f956b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf8605a7.css",
+    "static/js/main.6e220b7c.js"
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "name": "ign-codefoo10-application",
+  "homepage": "https://neil-kuldip.github.io/ign-codefoo10-application/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +11,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^3.2.3",
     "jsonp": "^0.2.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -19,6 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

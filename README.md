@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Code-Foo Program 2022 Application - Front-End
+A single-page web app for IGN video playlists, created using React 17, Material-UI v5, and react-player library. https://neil-kuldip.github.io/ign-codefoo10-application/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Steps for Build
+- ```cd ign-codefoo10-application```
+- ```npm install```
+- ```npm start```
 
-## Available Scripts
+### Project Description
+Applications loads video sources, metadata, and assets from [IGN's API](https://ign-apis.herokuapp.com/videos). Data is then rendered to the video player, description, and playlist components.
 
-In the project directory, you can run:
+### Implementation Details
 
-### `npm start`
+#### Component Styling
+I utilized Material UI's components to create a flexbox display for different screen dimensions. Through the use of sx props, styling the content of the components for the users in mind was much easier.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Components
+The application can be split to the three components I listed above: the video player, video description area, and playlist. Through making Jsonp requests, I was able to pass video data as props down to each of the children components as intended with React's design. On update of the current video info being played, each of the three components would rerender.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### HTTP Requests
+This was the hardest challenge when doing this application for me. After much research into CORS Single-Origin Policy and the documentation of IGN's API, I was able to utilize a compatible Jsonp library that would allow me to utilize the API's permission to use callback functions to retrieve the necessary video data.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
